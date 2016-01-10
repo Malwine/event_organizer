@@ -3,6 +3,6 @@ FactoryGirl.define do
     name "ClojureBridge"
     start_date "2016-01-10"
     end_date "2016-01-10"
-    venue_id 1
+    venue  #create one venue using the factory and store the venue_id
   end
 end

@@ -21,3 +21,7 @@ Learning goals:
 - If you set up the app for the first time use `bundle exec rake db:create`
 - Then migrate the database with `bundle exec rake db:migrate`
 - To start the app run `rails s`
+
+## How to run the specs
+
+- Run the specs with `bundle exec guard`

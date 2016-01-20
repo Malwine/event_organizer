@@ -20,4 +20,9 @@ RSpec.describe Venue, type: :model do
     venue = build(:venue, capacity: -3)
     expect(venue).to_not be_valid
   end
+
+  it 'can have many events' do
+    venue = create(:venue_with_events)
+    expect(venue.events.first.name).to eq('ClojureBridge')
+  end
 end

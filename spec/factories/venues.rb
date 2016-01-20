@@ -4,6 +4,15 @@ FactoryGirl.define do
     address "Street 1"
     capacity 50
     wheelchair_accessible false
-  end
 
+    factory :venue_with_events do
+      transient do
+        events_count 5
+      end
+
+      after(:create) do |venue, evaluator|
+        create_list(:event, evaluator.events_count, venue: venue)
+      end
+    end
+  end
 end

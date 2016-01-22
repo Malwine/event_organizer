@@ -6,13 +6,7 @@ FactoryGirl.define do
     wheelchair_accessible false
 
     factory :venue_with_events do
-      transient do
-        events_count 5
-      end
-
-      after(:create) do |venue, evaluator|
-        create_list(:event, evaluator.events_count, venue: venue)
-      end
+      events { create_list :event, 2 }
     end
   end
 end

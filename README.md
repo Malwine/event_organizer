@@ -11,6 +11,11 @@ Learning goals:
 - Rails Associations
 - Rails Mailing
 
+## What does the app do?
+
+The app is a management tool for events e.g. ClojureBridge workshops.
+It wants to provide neat way sign up for an event or to organize one.
+
 
 ## How to get started
 

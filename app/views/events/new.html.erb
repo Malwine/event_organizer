@@ -1,1 +1,9 @@
 <h1>New Event</h1>
+
+<%= simple_form_for @event do |f| %>
+  <%= f.input :name,label: 'Event-Title' %>
+  <%= f.input :start_date %>
+  <%= f.input :end_date %>
+  <%= f.input :venue_id, collection: Venue.all %>
+  <%= f.button :submit %>
+<% end %>

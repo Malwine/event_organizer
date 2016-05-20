@@ -1,4 +1,8 @@
 class EventsController < ApplicationController
+  def index
+    @events = Event.order :start_date
+  end
+
   def new
     @event = Event.new
   end
@@ -10,6 +14,13 @@ class EventsController < ApplicationController
     else
       render "new"
     end
+  end
+
+  def show
+    @event = Event.find(params[:id])
+  end
+
+  def edit
   end
 
   private

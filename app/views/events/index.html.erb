@@ -1,0 +1,7 @@
+<h1>All events</h1>
+
+<% @events.each do |event|%>
+ <p><%= event.start_date %> - <%= event.end_date %> : <em><%= event.name %></em> |
+   <%= link_to 'Edit', edit_event_path(event)%>
+ </p>
+<% end %>

@@ -1,5 +1,5 @@
 # Change these
-server '46.101.197.49', port: 80, roles: [:web, :app, :db], primary: true
+server '46.101.197.49', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:Malwine/event_organizer.git'
 set :application,     'event_organizer'
